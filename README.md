@@ -1,1 +1,1 @@
-# scala-foundation-runtime-effects
+# foundation-runtime-effects
