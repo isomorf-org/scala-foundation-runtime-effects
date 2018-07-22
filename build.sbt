@@ -22,6 +22,11 @@ lazy val root = crossProject(JSPlatform, JVMPlatform)
       libraryDependencies += "org.isomorf" %%% "foundation-runtime-pure" % "0.5.2"
     )
 
+// if this is not here redundantly it does not compile...I don't know why!
+libraryDependencies += "org.isomorf" %%% "foundation-runtime-pure" % "0.5.2"
+
+
+
 lazy val rootJVM = root.jvm
 
 lazy val rootJS = root.js
