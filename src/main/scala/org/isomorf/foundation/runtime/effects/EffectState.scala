@@ -1,6 +1,6 @@
 package org.isomorf.foundation.runtime.effects
 
-import scala.reflect.runtime.universe._
+import scala.reflect.ClassTag
 
 import org.isomorf.foundation.runtime.RTEffect
 import org.isomorf.foundation.runtime.RuntimeEffectsValueConverter
@@ -15,7 +15,7 @@ trait EffectState {
 
   final type Action[P <: EffectProvider, B] = (P, RuntimeEffectsValueConverter) => B
 
-  def withProvider[A <: EffectProvider, B](f: Action[A, B])(implicit tag: TypeTag[A]): RTEffect[B]
+  def withProvider[A <: EffectProvider, B](f: Action[A, B])(implicit tag: ClassTag[A]): RTEffect[B]
 
-  def withProvider[A <: EffectProvider, B](resource: EffectResource)(f: Action[A, B])(implicit tag: TypeTag[A]): RTEffect[B]
+  def withProvider[A <: EffectProvider, B](resource: EffectResource)(f: Action[A, B])(implicit tag: ClassTag[A]): RTEffect[B]
 }
