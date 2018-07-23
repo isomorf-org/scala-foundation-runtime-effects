@@ -13,4 +13,4 @@ libraryDependencies += "org.isomorf" %% "foundation-runtime-effects" % "@VERSION
 
 ## Documentation
 
-[scaladocs](http://isomorf-org.github.io/scala-foundation-runtime-effects/scaladocs/api/@VERSION@/org/isomorf/foundation/effects/index.html)
+[scaladocs](http://isomorf-org.github.io/scala-foundation-runtime-effects/scaladocs/api/@VERSION@/org/isomorf/foundation/runtime/effects/index.html)
