@@ -8,9 +8,9 @@
 ![Maven Central](https://img.shields.io/maven-central/v/org.isomorf/foundation-runtime-effects_2.12.svg?style=for-the-badge)
 
 ```scala
-libraryDependencies += "org.isomorf" %% "foundation-runtime-effects" % "0.1.0"
+libraryDependencies += "org.isomorf" %% "foundation-runtime-effects" % "0.2.0"
 ```
 
 ## Documentation
 
-[scaladocs](http://isomorf-org.github.io/scala-foundation-runtime-effects/scaladocs/api/0.1.0/org/isomorf/foundation/runtime/effects/index.html)
+[scaladocs](http://isomorf-org.github.io/scala-foundation-runtime-effects/scaladocs/api/0.2.0/org/isomorf/foundation/runtime/effects/index.html)
