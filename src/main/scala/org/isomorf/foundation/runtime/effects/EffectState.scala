@@ -15,7 +15,7 @@ trait EffectState {
 
   final type Action[P <: EffectProvider, B] = (P, RuntimeEffectsValueConverter) => B
 
-  def withProvider[A <: EffectProvider, B](f: Action[A, B])(implicit tag: ClassTag[A]): RTEffect[B]
+  def withProvider[A <: EffectProvider, B](f: Action[A, RTEffect[B]])(implicit tag: ClassTag[A]): RTEffect[B]
 
-  def withProvider[A <: EffectProvider, B](resource: EffectResource)(f: Action[A, B])(implicit tag: ClassTag[A]): RTEffect[B]
+  def withProvider[A <: EffectProvider, B](resource: EffectResource)(f: Action[A, RTEffect[B]])(implicit tag: ClassTag[A]): RTEffect[B]
 }
